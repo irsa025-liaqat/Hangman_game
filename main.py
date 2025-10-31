@@ -9,7 +9,6 @@ GAME_LOG_DIR = ROOT / "game_log"
 STATS_FILE = GAME_LOG_DIR / "stats.txt"
 
 def load_stats():
-    """Load game stats from a simple text file instead of JSON."""
     GAME_LOG_DIR.mkdir(parents=True, exist_ok=True)
 
     # Default stats
