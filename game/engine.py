@@ -65,7 +65,7 @@ class HangmanEngine:
         if attempt == self.word:
             self.correct.update(self.word)
             self._append_log(f"Full-word guess '{attempt}' -> Correct")
-            return True, "Correct! You guessed it!"
+            return True, "Correct! You guessed the word!"
         else:
             self.wrong_guesses += 1
             self._append_log(f"Full-word guess '{attempt}' -> Wrong")
