@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 from pathlib import Path
 from game.wordlist import WordList
 from game.engine import HangmanEngine
@@ -76,7 +76,7 @@ def main():
         display.show_stats(stats)
         again = input("\nPlay again? (y/n): ").strip().lower()
         if again != "y":
-            print("Thanks for playing!")
+            print("Thankyou for playing!")
             break
 
 
