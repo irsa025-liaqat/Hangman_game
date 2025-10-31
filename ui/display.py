@@ -30,8 +30,8 @@ class Display:
 
     def prompt_full_word(self): return input("Enter full-word guess: ").strip()
     def print_message(self, msg): print(msg)
-    def show_win(self, word, score): print(f"\n🎉 You win! The word was '{word}'. Score: {score}")
-    def show_loss(self, word): print(f"\n💀 You lost! The word was '{word}'.")
+    def show_win(self, word, score): print(f"\n🎉 You win! The Word was '{word}'. Score: {score}")
+    def show_loss(self, word): print(f"\n💀 You lost! The Word was '{word}'.")
     def show_stats(self, stats):
         g, w, l, t = stats.values()
         winrate = (w / g * 100) if g else 0
