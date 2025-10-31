@@ -2,7 +2,7 @@ from pathlib import Path
 import random
 
 # ======================================================
-# Base category data (seed words)
+# Base category data 
 # ======================================================
 BASE_CATEGORIES = {
     "Animals": [
@@ -88,7 +88,7 @@ def expand_to_1000(base_list):
 
 
 # ======================================================
-# Generate full DEFAULT_CATEGORIES with 1000 each
+# Generated full DEFAULT_CATEGORIES with 1000 each
 # ======================================================
 DEFAULT_CATEGORIES = {cat: expand_to_1000(words) for cat, words in BASE_CATEGORIES.items()}
 
